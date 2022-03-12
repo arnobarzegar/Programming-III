@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="class.js"></script>
+	  <script src="script.js"></script>
+	      <style>
+        #legend {position: absolute;top: 0;right: 0;width: 800px;} .legend-color {width: 30px;height: 30px;} td {border: 1px solid black; font-size: 14px; padding-left: 5px;}
+    </style>
+</head>
+<body>
+    <table id="legend">
+        <tr>
+            <td class="legend-color">Գույն</td>
+            <td>Անվանում</td>
+            <td>Շարժվում է</td>
+            <td>Ուտում է</td>
+            <td>Բազմանում է</td>
+            <td>Մեռնում է</td>
+        </tr>
+
+        <tr>
+            <td class="legend-color" style="background-color:gray"></td>
+            <td>Դատարկ վանդակներ</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="legend-color" style="background-color:green"></td>
+            <td>Խոտ</td>
+            <td></td>
+            <td></td>
+            <td>Մոտիկ 8 վանդակներում, 4 տակտը մեկ</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="legend-color" style="background-color:yellow"></td>
+            <td>Խոտակեր</td>
+            <td>Մոտիկ 8 վանդակներում, էներգիան նվազում է է-ով</td>
+            <td>Մոտիկ 8 վանդակների խոտերին, շարժվելիս էներգիան ավելանում է 1֊ով</td>
+            <td>Բազմանում է մոտիկ տարածքներում, երբ էներգիան 10֊ից ավել է</td>
+            <td>Մեռնում է, երբ էներգիան փոքր է 0֊ից</td>
+        </tr>
+        <tr>
+            <td class="legend-color" style="background-color:red"></td>
+            <td>Գիշատիչ</td>
+            <td>Մոտիկ 8 վանդակներում, էներգիան նվազում է 2֊ով</td>
+            <td>Մոտիկ 8 վանդակների Խոտակերներին, շարժվելիս էներգիան ավելանում է 2֊ով</td>
+            <td>Բազմանում է մոտիկ տարածքներում, երբ էներգիան 15֊ից ավել է</td>
+            <td>Մեռնում է, երբ էներգիան փոքր է 0֊ից</td>
+        </tr>
+                <tr>
+                        <td class="legend-color" style="background-color:cyan"></td>
+                        <td>Energy</td>
+                        <td>Մոտիկ 8 վանդակներում, էներգիան չի նվազում</td>
+                        <td>Խոտակերներին և Գիշատիչներին, մոտիկ 8 վանդակներում, շարժվելիս էներգիան ավելանում է 1֊ով</td>
+                        <td>Asister է ստեղծում մոտիկ տարածքներում, երբ էներգիան 0֊ից ավել է</td>
+                        <td>Չի սատկում</td>
+                </tr>
+                <tr>
+                        <td class="legend-color" style="background-color:lightcoral"></td>
+                        <td>Asister</td>
+                        <td>Չի շարժվում</td>
+                        <td>Villager-ներին մոտիկ 8 վանդակներում էներգիան 1-ով ավելացնում է:</td>
+                        <td>Բան չի անում</td>
+                        <td>Չի մեռնում</td>                   
+				</tr>
+                <tr>
+                        <td class="legend-color" style="background-color:brown"></td>
+                        <td>Vilager</td>
+                        <td>Մոտիկ 8 վանդակներում, նաև խոտերի վրայով, էներգիան չի քչանում</td>
+                        <td>Asister-ներին, մոտիկ 8 վանդակներում, շարժվելիս էներգիան ավելանում է 2֊ով</td>
+                        <td>Խոտ է ստեղծում մոտիկ տարածքներում, երբ էներգիան 0֊ից ավել է</td>
+                        <td>Չի մեռնում</td>                   
+                </tr>
+            </table>
+        </p>
+
+</body>
+</html>
